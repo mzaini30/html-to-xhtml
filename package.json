@@ -1,0 +1,26 @@
+{
+  "name": "html-to-xhtml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzaini30/html-to-xhtml.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mzaini30/html-to-xhtml/issues"
+  },
+  "homepage": "https://github.com/mzaini30/html-to-xhtml#readme",
+  "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.4.3",
+    "astro": "^0.20.12",
+    "postcss-windicss": "^1.0.0"
+  }
+}
