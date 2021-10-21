@@ -1,6 +1,10 @@
 ---
 import './_global.css'
 import Index from './_index.svelte'
+
+const gambar = 'https://cdn.statically.io/screenshot/html-to-xhtml.vercel.app'
+const title = 'HTML to xHTML'
+const description = 'Tools untuk convert HTML ke xHTML. Bermanfaat bagi pembuat template Blogspot'
 ---
 
 <!DOCTYPE html>
@@ -9,6 +13,19 @@ import Index from './_index.svelte'
 	<meta charset="UTF-8" >
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 	<title>HTML to xHTML</title>
+	<meta name="description" content={description} />
+	<meta property="og:locale" content="id_ID" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:image" content={gambar} />
+	<meta property="og:image:width" content="1280" />
+	<meta property="og:image:height" content="960" />
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:title" content={title} />
+	<meta property="twitter:description" content={description} />
+	<meta property="twitter:image" content={gambar} />
+	<link rel="icon" href="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
@@ -34,5 +51,8 @@ import Index from './_index.svelte'
 	}
 	.svelte :global(textarea){
 		@apply focus:outline-none rounded-lg p-3 min-h-[300px] w-full;
+	}
+	.svelte :global(.readonly){
+		@apply bg-gray-200
 	}
 </style>
