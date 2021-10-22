@@ -13,5 +13,5 @@
 	}
 </script>
 
-<textarea bind:value={input} placeholder="Tulis kodenya di sini"></textarea>
-<textarea bind:value={output} class="readonly" placeholder="Hasilnya akan tampil di sini" readonly></textarea>
+<textarea bind:value={input} placeholder="Write your code here"></textarea>
+<textarea bind:value={output} class="readonly" readonly></textarea>
